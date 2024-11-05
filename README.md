@@ -17,7 +17,7 @@ Error Handling: Shows an error message for invalid city names, enhancing user ex
 Frontend: HTML, CSS, JavaScript
 API: OpenWeatherMap API for real-time weather data
 
-# 🚀 Getting Started
+## 🚀 Getting Started
 Clone the repository:
 git clone https://github.com/Abithaabbas/weather-app.git
 Open the project: Open the index.html file in your browser.
