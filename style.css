@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body {
+    background-color: #FFFDED; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+    box-shadow: inset;
+}
+
+.card {
+    background: #091540;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(22, 19, 19, 0.1);
+    padding: 25px;
+    width: 320px;
+    text-align: center;
+    border: 3px solid #F1E4E4; /* Light Cyan */
+    animation: fadeIn 1s ease-in;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    background-color: #dddfe6; 
+    padding: 7px 12px;
+    margin-bottom: 20px;
+    border: 2px solid #595959;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    background: none;
+    width: 85%;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: transparent;
+}
+
+.search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.search button img {
+    width: 28px;
+    height: 28px;
+}
+
+.error {
+    display: none;
+    color: #f44336; /* Red */
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.Weather {
+    display: none; 
+}
+
+.Weather img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+}
+
+.temp {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #F1E4E4;
+}
+
+.city {
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #F1E4E4;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.details .col {
+    text-align: center;
+}
+
+.details img {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 5px;
+}
+
+.details p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.col .humidity, .col .hum, .col .win, .col .wind{
+    color: #F1E4E4;
+}
+
+
+@media (max-width: 400px) {
+    .card {
+        width: 100%;
+        margin: 20px;
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
